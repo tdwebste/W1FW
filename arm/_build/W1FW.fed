@@ -1,0 +1,95 @@
+;#<FEEDBACK># ARM Linker, 5.03 [Build 76]: Last Updated: Sun Apr 20 21:42:23 2014
+;VERSION 0.2
+;FILE app_timer.o
+__asm___11_app_timer_c_cd27f9c3____REV16 <= USED 0
+__asm___11_app_timer_c_cd27f9c3____REVSH <= USED 0
+app_timer_cnt_diff_compute <= USED 0
+app_timer_cnt_get <= USED 0
+app_timer_stop_all <= USED 0
+;FILE arm_startup_nrf51.o
+;FILE ble_advdata.o
+__asm___13_ble_advdata_c_cb25090c____REV16 <= USED 0
+__asm___13_ble_advdata_c_cb25090c____REVSH <= USED 0
+;FILE ble_bas.o
+__asm___9_ble_bas_c_054de55d____REV16 <= USED 0
+__asm___9_ble_bas_c_054de55d____REVSH <= USED 0
+;FILE ble_conn_params.o
+__asm___17_ble_conn_params_c_2dcac06e____REV16 <= USED 0
+__asm___17_ble_conn_params_c_2dcac06e____REVSH <= USED 0
+ble_conn_params_change_conn_params <= USED 0
+ble_conn_params_stop <= USED 0
+;FILE ble_debug_assert_handler.o
+__asm___26_ble_debug_assert_handler_c_be844777____REV16 <= USED 0
+__asm___26_ble_debug_assert_handler_c_be844777____REVSH <= USED 0
+;FILE ble_dis.o
+__asm___9_ble_dis_c_e51dcafe____REV16 <= USED 0
+__asm___9_ble_dis_c_e51dcafe____REVSH <= USED 0
+;FILE ble_error_log.o
+__asm___15_ble_error_log_c_5061f549____REV16 <= USED 0
+__asm___15_ble_error_log_c_5061f549____REVSH <= USED 0
+ble_error_log_write <= USED 0
+;FILE ble_flash.o
+__asm___11_ble_flash_c_0294ac3c____REV16 <= USED 0
+__asm___11_ble_flash_c_0294ac3c____REVSH <= USED 0
+ble_flash_block_write <= USED 0
+ble_flash_on_radio_active_evt <= USED 0
+ble_flash_page_addr <= USED 0
+ble_flash_page_erase <= USED 0
+ble_flash_word_write <= USED 0
+;FILE ble_nus.o
+__asm___9_ble_nus_c_5b06b83c____REV16 <= USED 0
+__asm___9_ble_nus_c_5b06b83c____REVSH <= USED 0
+;FILE ble_srv_common.o
+__asm___16_ble_srv_common_c_d5082fca____REV16 <= USED 0
+__asm___16_ble_srv_common_c_d5082fca____REVSH <= USED 0
+;FILE data_transfer.o
+__asm___15_data_transfer_c_3176ff20____REV16 <= USED 0
+__asm___15_data_transfer_c_3176ff20____REVSH <= USED 0
+;FILE flash.o
+__asm___7_flash_c_b1a4db8a____REV16 <= USED 0
+__asm___7_flash_c_b1a4db8a____REVSH <= USED 0
+;FILE main.o
+__asm___6_main_c_5d08c552____REV16 <= USED 0
+__asm___6_main_c_5d08c552____REVSH <= USED 0
+check_step2 <= USED 0
+check_timeout <= USED 0
+print_error_code <= USED 0
+unactive_device <= USED 0
+;FILE pstorage.o
+__asm___10_pstorage_c_1dab5049____REV16 <= USED 0
+__asm___10_pstorage_c_1dab5049____REVSH <= USED 0
+pstorage_block_identifier_get <= USED 0
+pstorage_clear <= USED 0
+pstorage_init <= USED 0
+pstorage_load <= USED 0
+pstorage_register <= USED 0
+pstorage_store <= USED 0
+;FILE rtc.o
+__asm___5_rtc_c_dc7629e1____REV16 <= USED 0
+__asm___5_rtc_c_dc7629e1____REVSH <= USED 0
+__asm___5_rtc_c_dc7629e1__nrf_delay_us <= USED 0
+rs5c372a_register_read <= USED 0
+;FILE sensor.o
+ADC_Disable <= USED 0
+__asm___8_sensor_c_ba439d72____REV16 <= USED 0
+__asm___8_sensor_c_ba439d72____REVSH <= USED 0
+;FILE simple_uart.o
+__asm___13_simple_uart_c_5dda6715____REV16 <= USED 0
+__asm___13_simple_uart_c_5dda6715____REVSH <= USED 0
+__asm___13_simple_uart_c_5dda6715__nrf_delay_us <= USED 0
+simple_uart_get <= USED 0
+simple_uart_get_with_timeout <= USED 0
+;FILE softdevice_handler.o
+__asm___20_softdevice_handler_c_370b0038____REV16 <= USED 0
+__asm___20_softdevice_handler_c_370b0038____REVSH <= USED 0
+;FILE step.o
+__asm___6_step_c_88e27925____REV16 <= USED 0
+__asm___6_step_c_88e27925____REVSH <= USED 0
+is_step <= USED 0
+;FILE system_nrf51.o
+SystemCoreClockUpdate <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REV16 <= USED 0
+__asm___14_system_nrf51_c_5d646a67____REVSH <= USED 0
+;FILE twi_hw_master_sd_4_4.o
+__asm___22_twi_hw_master_SD_4_4_c_959ec897____REV16 <= USED 0
+__asm___22_twi_hw_master_SD_4_4_c_959ec897____REVSH <= USED 0
