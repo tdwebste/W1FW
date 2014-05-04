@@ -1,0 +1,600 @@
+Dependencies for Project 'uart_example', Target 'nrf51822_xxaa_s110 (256K)': (DO NOT MODIFY !)
+F (..\..\..\..\Source\templates\arm\arm_startup_nrf51.s)(0x5365B539)(--cpu Cortex-M0 --li -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include--list .\_build\arm_startup_nrf51.lst --xref -o .\_build\arm_startup_nrf51.o --depend .\_build\arm_startup_nrf51.d)
+F (..\..\..\..\Source\templates\system_nrf51.c)(0x5365B3AE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\system_nrf51.o --omf_browse .\_build\system_nrf51.crf --depend .\_build\system_nrf51.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+F (..\main.c)(0x5365B2FE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\main.o --omf_browse .\_build\main.crf --depend .\_build\main.d)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_gpio.h)(0x5365B347)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_conn_params.h)(0x5365B358)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_dis.h)(0x5365B413)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5365B35C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\pstorage.h)(0x5365B357)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\pstorage_pl.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_timer.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\softdevice_handler.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_sdm.h)(0x5365B4DD)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_sdm.h)(0x5365B4DC)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5365B36C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5365B36D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\boards\pca10001.h)(0x5365B360)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\step.h)(0x5365B371)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\rtc.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\data_transfer.h)(0x5365B36E)
+F (..\sensor.c)(0x5365B300)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\sensor.o --omf_browse .\_build\sensor.crf --depend .\_build\sensor.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_gpio.h)(0x5365B347)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\softdevice_handler.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_sdm.h)(0x5365B4DD)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_sdm.h)(0x5365B4DC)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5365B36C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5365B36D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+F (..\step.c)(0x5365B2FF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\step.o --omf_browse .\_build\step.crf --depend .\_build\step.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\step.h)(0x5365B371)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\rtc.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\data_transfer.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\softdevice_handler.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_sdm.h)(0x5365B4DD)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_sdm.h)(0x5365B4DC)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5365B36C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5365B36D)
+F (..\rtc.c)(0x5365B2FF)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\rtc.o --omf_browse .\_build\rtc.crf --depend .\_build\rtc.d)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\rtc.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_delay.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+F (..\data_transfer.c)(0x5365B2FE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\data_transfer.o --omf_browse .\_build\data_transfer.crf --depend .\_build\data_transfer.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\rtc.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\data_transfer.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_hci.h)(0x5365B4D8)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_timer.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_advdata.h)(0x5365B358)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_conn_params.h)(0x5365B358)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\softdevice_handler.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_sdm.h)(0x5365B4DD)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_sdm.h)(0x5365B4DC)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5365B36C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5365B36D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\step.h)(0x5365B371)
+F (..\flash.c)(0x5365B2FE)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\flash.o --omf_browse .\_build\flash.crf --depend .\_build\flash.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\step.h)(0x5365B371)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\sensor.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\main.h)(0x5365B36F)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\rtc.h)(0x5365B370)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\data_transfer.h)(0x5365B36E)
+F (..\ble_nus.c)(0x5365B2FD)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_nus.o --omf_browse .\_build\ble_nus.crf --depend .\_build\ble_nus.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\ble_nus.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+F (..\..\..\..\Source\ble\ble_services\ble_dis.c)(0x5365B4E3)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_dis.o --omf_browse .\_build\ble_dis.crf --depend .\_build\ble_dis.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_dis.h)(0x5365B413)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+F (..\..\..\..\Source\ble\ble_services\ble_bas.c)(0x5365B4E1)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_bas.o --omf_browse .\_build\ble_bas.crf --depend .\_build\ble_bas.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_bas.h)(0x5365B40C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+F (..\..\..\..\Source\ble\ble_error_log.c)(0x5365B389)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_error_log.o --omf_browse .\_build\ble_error_log.crf --depend .\_build\ble_error_log.d)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_error_log.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_gpio.h)(0x5365B347)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\pstorage.h)(0x5365B357)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\pstorage_pl.h)(0x5365B36F)
+F (..\..\..\..\Source\app_common\app_timer.c)(0x5365B375)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\app_timer.o --omf_browse .\_build\app_timer.crf --depend .\_build\app_timer.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_timer.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_delay.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+F (..\..\..\..\Source\simple_uart\simple_uart.c)(0x5365B3A8)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\simple_uart.o --omf_browse .\_build\simple_uart.crf --depend .\_build\simple_uart.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\simple_uart.h)(0x5365B310)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_delay.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_gpio.h)(0x5365B347)
+F (..\ble_flash.c)(0x5365B2FC)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_flash.o --omf_browse .\_build\ble_flash.crf --depend .\_build\ble_flash.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+F (..\..\..\..\Source\ble\ble_debug_assert_handler.c)(0x5365B389)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_debug_assert_handler.o --omf_browse .\_build\ble_debug_assert_handler.crf --depend .\_build\ble_debug_assert_handler.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_debug_assert_handler.h)(0x5365B35C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_error_log.h)(0x5365B35E)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_flash.h)(0x5365B35E)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+F (..\..\..\..\Source\ble\ble_conn_params.c)(0x5365B387)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_conn_params.o --omf_browse .\_build\ble_conn_params.crf --depend .\_build\ble_conn_params.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_conn_params.h)(0x5365B358)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_hci.h)(0x5365B4D8)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_timer.h)(0x5365B354)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+F (..\twi_hw_master_SD_4_4.c)(0x5365B300)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\twi_hw_master_sd_4_4.o --omf_browse .\_build\twi_hw_master_sd_4_4.crf --depend .\_build\twi_hw_master_sd_4_4.d)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\twi_master.h)(0x5365B30D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\twi_master_config.h)(0x5365B371)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_delay.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_gpio.h)(0x5365B347)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_assert.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+F (..\..\..\..\Source\ble\ble_advdata.c)(0x5365B382)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_advdata.o --omf_browse .\_build\ble_advdata.crf --depend .\_build\ble_advdata.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_advdata.h)(0x5365B358)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+F (..\..\..\..\Source\app_common\pstorage.c)(0x5365B380)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\pstorage.o --omf_browse .\_build\pstorage.crf --depend .\_build\pstorage.d)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_assert.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_deprecated.h)(0x5365B309)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\pstorage.h)(0x5365B357)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Board\pca10001\step_counter\include\pstorage_pl.h)(0x5365B36F)
+F (..\..\..\..\Source\sd_common\softdevice_handler.c)(0x5365B3A6)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\softdevice_handler.o --omf_browse .\_build\softdevice_handler.crf --depend .\_build\softdevice_handler.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\softdevice_handler.h)(0x5365B36E)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_sdm.h)(0x5365B4DD)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_soc.h)(0x5365B4DE)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51_bitfields.h)(0x5365B30A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_soc.h)(0x5365B4DB)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error_sdm.h)(0x5365B4DC)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_scheduler.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ble_stack_handler_types.h)(0x5365B36C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble.h)(0x5365B4CE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_l2cap.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_err.h)(0x5365B4CF)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gattc.h)(0x5365B4D5)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatts.h)(0x5365B4D7)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\sd_common\ant_stack_handler_types.h)(0x5365B36D)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf_assert.h)(0x5365B30A)
+F (..\..\..\..\Source\ble\ble_services\ble_srv_common.c)(0x5365B4E9)(-c --cpu Cortex-M0 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I.. -I..\..\..\..\include -I..\include -I..\..\..\..\Include\app_common -I..\..\..\..\Include\ble -I..\..\..\..\Include\ble\ble_services -I..\..\..\..\Include\ble\softdevice -I..\..\..\..\Include\sd_common -I..\..\..\..\include\boards --c99-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Device\Nordic\nRF51822\Include-DNRF51 -DBOARD_PROJECT_W1 -DBLE_STACK_SUPPORT_REQD -DDEBUG_NRF_USER -o .\_build\ble_srv_common.o --omf_browse .\_build\ble_srv_common.crf --depend .\_build\ble_srv_common.d)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\ble_services\ble_srv_common.h)(0x5365B46C)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (C:\Keil\ARM\ARMCC\include\stdbool.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_types.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_util.h)(0x5365B355)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\compiler_abstraction.h)(0x5365B308)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nrf51.h)(0x5365B309)
+I (C:\Keil\ARM\CMSIS\Include\core_cm0.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x51C7B54A)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x51C7B54A)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\system_nrf51.h)(0x5365B30C)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\app_common\app_error.h)(0x5365B354)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_error.h)(0x5365B4DA)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gap.h)(0x5365B4D3)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_ranges.h)(0x5365B4D9)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\nrf_svc.h)(0x5365B4DE)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\Include\ble\softdevice\ble_gatt.h)(0x5365B4D4)
+I (C:\Keil\ARM\ARMCC\include\string.h)(0x51C7B744)
+I (D:\MyProject\SourceCode\Git\W1FW\nrf51822\include\nordic_common.h)(0x5365B308)
+F (..\..\..\..\Release\History_W1FW.txt)(0x5365B30E)()
