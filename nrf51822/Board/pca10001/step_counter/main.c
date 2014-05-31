@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (c) 2013 W1FW. All Rights Reserved.
  *
  * Licensees are granted free, non-transferable use of the information. NO
@@ -6,7 +6,7 @@
  * the file.
  *
  */
- 
+
 /*****************************************************************************
 * Head file
 *****************************************************************************/
@@ -41,7 +41,7 @@
 /*****************************************************************************
 * Macro definition
 *****************************************************************************/
-#define DEAD_BEEF                       0xDEADBEEF 
+#define DEAD_BEEF                       0xDEADBEEF
 
 
 #define APP_TIMER_PRESCALER                 0                                         /**< Value of the RTC1 PRESCALER register. */
@@ -53,7 +53,7 @@
 #define STEP_LEVEL_MEAS_INTERVAL         		APP_TIMER_TICKS(3000, APP_TIMER_PRESCALER)/**< Battery level measurement interval (ticks). */
 #define MANUFACTURER_NAME                   "W1FW"                     								/**< Manufacturer. Will be passed to Device Information Service. */
 
-#define APP_GPIOTE_MAX_USERS            1  
+#define APP_GPIOTE_MAX_USERS            1
 #define APP_ADV_INTERVAL                64                                          	/**< The advertising interval (in units of 0.625 ms. This value corresponds to 40 ms). */
 
 #define ACK_ID_INIT											"ACK-ID-INIT"
@@ -67,8 +67,8 @@
 *****************************************************************************/
 static ble_gap_sec_params_t             m_sec_params;                               	/**< Security requirements for this application. */
 static uint16_t                         m_conn_handle = BLE_CONN_HANDLE_INVALID;    	/**< Handle of the current connection. */
-static app_timer_id_t                   m_sensor_timer_id; 
-static app_timer_id_t                   m_battery_timer_id; 
+static app_timer_id_t                   m_sensor_timer_id;
+static app_timer_id_t                   m_battery_timer_id;
 static app_timer_id_t                   m_step_timer_id;
 ble_bas_t                               m_bas;                                     		/**< Structure used to identify the battery service. */
 ble_nus_t                        				m_nus;																				/**< Structure to identify the Nordic UART Service. */
@@ -97,14 +97,14 @@ static void power_manage(void);
 * Error Handling Functions
 *****************************************************************************/
 
-/**@brief Error handler function, which is called when an error has occurred. 
+/**@brief Error handler function, which is called when an error has occurred.
  *
- * @warning This handler is an example only and does not fit a final product. You need to analyze 
+ * @warning This handler is an example only and does not fit a final product. You need to analyze
  *          how your product is supposed to react in case of error.
  *
  * @param[in] error_code  Error code supplied to the handler.
  * @param[in] line_num    Line number where the handler is called.
- * @param[in] p_file_name Pointer to the file name. 
+ * @param[in] p_file_name Pointer to the file name.
  */
 void app_error_handler(uint32_t error_code, uint32_t line_num, const uint8_t * p_file_name)
 {
@@ -185,12 +185,13 @@ void array_ncpy(char *array1,char *array2,uint8_t num)
 void ble_transfer_data(uint8_t * data, uint16_t length)
 {
     uint32_t err_code;
-	
+
+    nrf_gpio_pin_toggle(ADVERTISING_LED_PIN_NO);
     err_code = ble_nus_send_string(&m_nus, data, length);
     if (err_code != NRF_ERROR_INVALID_STATE)
     {
         APP_ERROR_CHECK(err_code);
-    }		
+    }
 }
 
 
@@ -201,22 +202,22 @@ void ble_transfer_data(uint8_t * data, uint16_t length)
 static int is_first_start()
 {
 	int ret = 0;
-	
+
 	return ret;
 }
 seattle-test*/
-/*  this function is called when ADC get its data 
+/*  this function is called when ADC get its data
 *   here we can transfer data either by uart or ble
 */
 void check_step(uint16_t data)
 {
-	
+
   //char str[20];
 	uint8_t step_true = 1;
 
 	step.is_step = false;
 	step.current_voltage = data;
-	
+
 	// Check if a step is complete and update the direction
 	if(!is_step2(&step, &step_count)&&(step.is_step))
 	{
@@ -232,7 +233,7 @@ void check_step(uint16_t data)
 			W1_DEBUG("ble realtime\n");
 			ble_transfer_data(&step_true, 1);
 		}
-		
+
 	}
 	//get_time(step_count.now_time);
 	//sprintf(str,"\n\rd:%d",data);
@@ -258,7 +259,7 @@ void check_step2(int LpcompResult)
 		W1_DEBUG(str);
 	}
 	step.last_voltage = step.current_voltage;
-	
+
 }
 
 
@@ -297,7 +298,7 @@ static void sensor_level_meas_timeout_handler(void * p_context)
     sensor_start();
 		if(!real_time_flag){
 			step_mode_run(&step_count,&step_buffer);
-	
+
 			if(step_count.switch_mode == DATA_TRANSFERER_MODE &&  allow_transfer_flag){
 				transfer_mode_run();
 				allow_transfer_flag = false;
@@ -309,7 +310,7 @@ static void sensor_level_meas_timeout_handler(void * p_context)
 static void step_level_meas_timeout_handler(void * p_context)
 {
     UNUSED_PARAMETER(p_context);
-	
+
 		if(step_count.step_count==0)
 		{
 			step_count.count_mul ++;
@@ -328,13 +329,13 @@ static void step_level_meas_timeout_handler(void * p_context)
 			step_count.count_mul = 0;
 		}
 		step_count.step_count = 0;
-    
+
 }
 /**@brief Assert macro callback function.
  *
  * @details This function will be called in case of an assert in the SoftDevice.
  *
- * @warning This handler is an example only and does not fit a final product. You need to analyze 
+ * @warning This handler is an example only and does not fit a final product. You need to analyze
  *          how your product is supposed to react in case of Assert.
  * @warning On assert from the SoftDevice, the system can only recover on reset.
  *
@@ -366,12 +367,12 @@ static void timers_init(void)
                                 APP_TIMER_MODE_REPEATED,
                                 sensor_level_meas_timeout_handler);
 		APP_ERROR_CHECK(err_code);
-	
+
     err_code = app_timer_create(&m_battery_timer_id,
                                 APP_TIMER_MODE_REPEATED,
-                                battery_level_meas_timeout_handler);	
+                                battery_level_meas_timeout_handler);
     APP_ERROR_CHECK(err_code);
-	
+
 		err_code = app_timer_create(&m_step_timer_id,
                                 APP_TIMER_MODE_REPEATED,
                                 step_level_meas_timeout_handler);
@@ -384,8 +385,8 @@ static void buttons_init(void)
 {
 		//seattle-test why need this
     nrf_gpio_cfg_sense_input(WAKEUP_BUTTON_PIN_NO,
-                             BUTTON_PULL, 
-                             NRF_GPIO_PIN_SENSE_LOW);    
+                             BUTTON_PULL,
+                             NRF_GPIO_PIN_SENSE_LOW);
 }
 
 /**@brief  Function for initializing the UART module.
@@ -403,7 +404,7 @@ void LPCOMP_COMP_IRQHandler(void)
 	{
 		//W1_DEBUG("LPCOMP IRQHandler \n");
 		NRF_LPCOMP->EVENTS_CROSS = 0;
-		
+
 		// Trigering SAMPLE task to generate RESULT
 		NRF_LPCOMP->TASKS_SAMPLE = 1;
 		//check_step2(NRF_LPCOMP->RESULT);
@@ -415,17 +416,17 @@ void LPCOMP_COMP_IRQHandler(void)
  */
 static void LPCOMP_start(void)
 {
-	
+
 	W1_DEBUG("lpcomp start \n");
-	
+
 	// Enable interrupt on LPCOMP CROSS event
 	NRF_LPCOMP->INTENSET = LPCOMP_INTENSET_CROSS_Msk;
 	NVIC_EnableIRQ(LPCOMP_COMP_IRQn);
-	
+
 	NRF_LPCOMP->PSEL = LPCOMP_PSEL_PSEL_AnalogInput2;
 	NRF_LPCOMP->REFSEL = LPCOMP_REFSEL_REFSEL_SupplyFiveEighthsPrescaling;
 	NRF_LPCOMP->ANADETECT = LPCOMP_ANADETECT_ANADETECT_Cross;
-	
+
 	// Enable and start the low power comparator
 	NRF_LPCOMP->ENABLE = LPCOMP_ENABLE_ENABLE_Enabled;
   NRF_LPCOMP->TASKS_START = 1;
@@ -444,21 +445,21 @@ static void LPCOMP_end(void)
 static void ble_stack_init(void)
 {
     uint32_t err_code;
-    
+
     // Initialize the SoftDevice handler module.
     SOFTDEVICE_HANDLER_INIT(NRF_CLOCK_LFCLKSRC_XTAL_20_PPM, false);
 
     // Register with the SoftDevice handler module for BLE events.
     err_code = softdevice_ble_evt_handler_set(ble_evt_dispatch);
     APP_ERROR_CHECK(err_code);
-    
+
     // Register with the SoftDevice handler module for BLE events.
     err_code = softdevice_sys_evt_handler_set(sys_evt_dispatch);
     APP_ERROR_CHECK(err_code);
 }
 //seattle-test need modify
 void W1_softdevice_handler_sd_enable()
-{		
+{
 		ble_stack_init();
 }
 
@@ -517,7 +518,7 @@ static void sensor_timers_start(void)
     // Start application timers
     err_code = app_timer_start(m_sensor_timer_id, SENSOR_ADC_MEAS_INTERVAL, NULL);
     APP_ERROR_CHECK(err_code);
-	
+
 		if(err_code==NRF_SUCCESS)
 		{
 			W1_DEBUG("no error\n");
@@ -532,7 +533,7 @@ static void battery_timers_start(void)
     // Start application timers
     err_code = app_timer_start(m_battery_timer_id, BATTERY_LEVEL_MEAS_INTERVAL, NULL);
     APP_ERROR_CHECK(err_code);
-	
+
 		if(err_code==NRF_SUCCESS)
 		{
 			W1_DEBUG("no error\n");
@@ -547,7 +548,7 @@ static void step_timers_start(void)
     // Start application timers
     err_code = app_timer_start(m_step_timer_id, STEP_LEVEL_MEAS_INTERVAL, NULL);
     APP_ERROR_CHECK(err_code);
-	
+
 		if(err_code==NRF_SUCCESS)
 		{
 			W1_DEBUG("no error\n");
@@ -557,12 +558,12 @@ static void step_timers_start(void)
 static void sensor_timers_stop(void)
 {
 	uint32_t err_code;
-	
+
 	W1_DEBUG(" sensor timers stop\n");
 	// Stop applicatin timers
 	err_code = app_timer_stop(m_sensor_timer_id);
 	APP_ERROR_CHECK(err_code);
-	
+
 	if(err_code == NRF_SUCCESS)
 	{
 		W1_DEBUG("no error\n");
@@ -576,10 +577,10 @@ static void advertising_start(void)
 {
     uint32_t             err_code;
     ble_gap_adv_params_t adv_params;
-    
+
     // Start advertising
     memset(&adv_params, 0, sizeof(adv_params));
-    
+
     adv_params.type        = BLE_GAP_ADV_TYPE_ADV_IND;
     adv_params.p_peer_addr = NULL;
     adv_params.fp          = BLE_GAP_ADV_FP_ANY;
@@ -599,7 +600,7 @@ void W1_flash_write_prepare(void)
 
 void W1_flash_write_restore(void)
 {//W1_DEBUG("--14 \n");
-		W1_softdevice_handler_sd_enable();	
+		W1_softdevice_handler_sd_enable();
 	//W1_DEBUG("--15 \n");
 		sensor_timers_start();
 }
@@ -621,16 +622,16 @@ static void transfer_mode_run(void)
 static void system_off_mode_enter(void)
 {
     uint32_t err_code;
-	
-		// Update device info before power off	
-		device_info_update(device_config_main, &step_count);		
-	
+
+		// Update device info before power off
+		device_info_update(device_config_main, &step_count);
+
 		ble_stack_init();			//seattle-test why need this
-	
+
 		//ADC_Disable();
 		LPCOMP_start();
 
-	
+
 		W1_DEBUG("going to system off! \n");
     // Configure buttons with sense level low as wakeup source.					//seattle-test why need this
 	/*
@@ -640,9 +641,9 @@ static void system_off_mode_enter(void)
 	*/
      //nrf_gpio_cfg_sense_input(ADC_SENSOR_PIN_NO,
      //                        NRF_GPIO_PIN_PULLUP,
-     //                        NRF_GPIO_PIN_SENSE_LOW);        
+     //                        NRF_GPIO_PIN_SENSE_LOW);
     // Go to system-off mode (this function will not return; wakeup will cause a reset)
-    err_code = sd_power_system_off(); 
+    err_code = sd_power_system_off();
     APP_ERROR_CHECK(err_code);
 }
 
@@ -654,7 +655,7 @@ static void power_manage(void)
 		{
 			system_off_mode_enter();
 		}
-		
+
     uint32_t err_code = sd_app_evt_wait();
     APP_ERROR_CHECK(err_code);
 }
@@ -672,7 +673,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
     uint32_t                         err_code = NRF_SUCCESS;
     static ble_gap_evt_auth_status_t m_auth_status;
     ble_gap_enc_info_t *             p_enc_info;
-    
+
     switch (p_ble_evt->header.evt_id)
     {
 				/**< Connection established. */
@@ -681,9 +682,9 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
             nrf_gpio_pin_set(CONNECTED_LED_PIN_NO);				/*not used*/
             nrf_gpio_pin_clear(ADVERTISING_LED_PIN_NO);		/*not used*/
             m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
-				
+
 						//LPCOMP_end();
-						// Start timers used to generate battery 
+						// Start timers used to generate battery
 						//battery_timers_start();
             /* YOUR_JOB: Uncomment this part if you are using the app_button module to handle button
                          events (assuming that the button events are only needed in connected
@@ -694,8 +695,8 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
             err_code = app_button_enable();
             */
             break;
-				
-        /**< Disconnected from peer. */    
+
+        /**< Disconnected from peer. */
         case BLE_GAP_EVT_DISCONNECTED:
 						W1_DEBUG("disconnected ok\n");
 						power_off_flag = true;
@@ -715,13 +716,13 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
             }
 						*/
             break;
-            
+
         case BLE_GAP_EVT_SEC_PARAMS_REQUEST:
-            err_code = sd_ble_gap_sec_params_reply(m_conn_handle, 
-                                                   BLE_GAP_SEC_STATUS_SUCCESS, 
+            err_code = sd_ble_gap_sec_params_reply(m_conn_handle,
+                                                   BLE_GAP_SEC_STATUS_SUCCESS,
                                                    &m_sec_params);
             break;
-            
+
         case BLE_GATTS_EVT_SYS_ATTR_MISSING:
             err_code = sd_ble_gatts_sys_attr_set(m_conn_handle, NULL, 0);
             break;
@@ -729,7 +730,7 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
         case BLE_GAP_EVT_AUTH_STATUS:
             m_auth_status = p_ble_evt->evt.gap_evt.params.auth_status;
             break;
-            
+
         case BLE_GAP_EVT_SEC_INFO_REQUEST:
             p_enc_info = &m_auth_status.periph_keys.enc_info;
             if (p_enc_info->div == p_ble_evt->evt.gap_evt.params.sec_info_request.div)
@@ -742,16 +743,16 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
                 err_code = sd_ble_gap_sec_info_reply(m_conn_handle, NULL, NULL);
             }
             break;
-						
+
 				/**< Timeout expired. */
         case BLE_GAP_EVT_TIMEOUT:
             if (p_ble_evt->evt.gap_evt.params.timeout.src == BLE_GAP_TIMEOUT_SRC_ADVERTISEMENT)
             {
                 nrf_gpio_pin_clear(ADVERTISING_LED_PIN_NO);		/*not used*/
-							
+
                 // Configure buttons with sense level low as wakeup source.				//seattle-test why need this
                 nrf_gpio_cfg_sense_input(WAKEUP_BUTTON_PIN_NO,
-                                         BUTTON_PULL, 
+                                         BUTTON_PULL,
                                          NRF_GPIO_PIN_SENSE_LOW);
 
                 power_off_flag = true;
@@ -766,13 +767,13 @@ static void on_ble_evt(ble_evt_t * p_ble_evt)
 }
 
 /**@brief Function for uart command handler
- * @detail 
+ * @detail
  */
 void on_command_handler(char * data)
 {
 		uint8_t tmp_data[20];
 		uint16_t package_num;
-	
+
 		// Command "ID:"
 		if(!strncmp(data,"ID:",3))
 		{
@@ -832,7 +833,7 @@ void on_command_handler(char * data)
 			if(permission_agree){
 				array_ncpy((char*)tmp_data, device_config_main->login_time, TIME_LENGTH); //transfer the login time
 				tmp_data[TIME_LENGTH] = 50; 		//transfer the battery level
-				tmp_data[TIME_LENGTH+3] = 0x1;  //transfer the device type				
+				tmp_data[TIME_LENGTH+3] = 0x1;  //transfer the device type
 				package_num = ((device_config_main->page_end - device_config_main->page_now) * W1_MAX_WORD_OFFSET + device_config_main->word_offset) / 10 ;
 				tmp_data[TIME_LENGTH+1] = package_num % 0x100;
 				tmp_data[TIME_LENGTH+2] = package_num / 0x100;	//transfer the step data size
@@ -966,9 +967,9 @@ void unactive_device(void)
 	uint8_t word_count;
 	uint32_t buffer_page[256];
 	char str[50];
-	
+
 	W1_DEBUG("Unactive device, only for debug!!! \n");
-	
+
 	W1_flash_write_prepare();
 	//ble_flash_page_erase(PAGE_SIZE_END);
 	ble_flash_page_write(PAGE_SIZE_END, 0, (sizeof(FLASH_MAGIC_NUMBER))/4);
@@ -984,37 +985,37 @@ void unactive_device(void)
 * Main Function
 *****************************************************************************/
 /**
- * @brief Function for application main entry. 
+ * @brief Function for application main entry.
  * @return 0. int return type required by ANSI/ISO standard.
  */
 int main(void)
 {
 	power_off_flag = false;
 	permission_agree = false;
-	
+
 	step_count.step = &step;		//seattle-test need modify
-	
-#if (ENABLE_UART_FUNCTION == 1)		
+
+#if (ENABLE_UART_FUNCTION == 1)
 	uart_init();
 #endif
-	
-  uart_start();
-	//buttons_init(); 
+
+    uart_start();
+	//buttons_init();
 	timers_init();
-  ble_stack_init();
+    ble_stack_init();
 	rtc_init();
 
-	step_init(&step_count, &step_buffer);		
+	step_init(&step_count, &step_buffer);
 	device_config_main = device_init();		//seattle-test need modify
   //ble_stack_init();				//seattle-test why need this
 	//services_init();
 	sensor_timers_start();
 	//step_timers_start();
-#if (UNACTIVE_DEVICE_ENABLE == 1)	
+#if (UNACTIVE_DEVICE_ENABLE == 1)
 	unactive_device();
 #else
-	mode_switch(&step_count);	
-	//go to STEP_COUNTER_MODE	
+	mode_switch(&step_count);
+	//go to STEP_COUNTER_MODE
 	/*seattle-test
 	while(step_count.switch_mode == STEP_COUNTER_MODE)
 	{
@@ -1024,15 +1025,15 @@ int main(void)
 
 	//go to DATA_TRANSFERER_MODE
 	if(step_count.switch_mode == DATA_TRANSFERER_MODE)
-	{		
+	{
 		transfer_mode_run();
 	}
 	*/
 #endif //end UNACTIVE_DEVICE_ENABLE
-	
+
 	W1_DEBUG("\n End: this is project W1  \n");
-	
-	
+
+
 
 #if defined(END_WITH_UART)
 	//the code below can be used to test if the cpu is run or not
@@ -1053,7 +1054,7 @@ int main(void)
     }
   }
 #else
-	
+
 		//ADC_Disable();
 		//LPCOMP_start();
   // Enter main loop

@@ -1,0 +1,36 @@
+#ignore thumbnails created by windows
+Thumbs.db
+typescript
+
+#vim
+.*.sw?
+*~
+*.bak
+*.fb
+
+#binary
+_build/*
+
+#gcc
+*.o
+*.hex
+*.out
+*.bin
+*.lst
+*.sct
+
+#jlink & error
+JLinkLog.txt
+*.dep
+*.d
+*.crf
+*.build_log.htm
+*.tdwebste
+*.axf
+*.lnp
+*.map
+_build
+
+#keep local eclipse project files
+.cproject
+.project
