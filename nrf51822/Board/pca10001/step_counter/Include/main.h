@@ -49,9 +49,9 @@
 
 #define BIT_SET_ID_DONE					BIT0
 #define BIT_SET_TIME_DONE				BIT1
-#define BIT_STORAGE_INFO_OK			BIT2
+#define BIT_STORAGE_INFO_OK			    BIT2
 #define BIT_CHECK_ID_OK					BIT3
-#define	BIT_DATA_TRANS_OVER			BIT4
+#define	BIT_DATA_TRANS_OVER			    BIT4
 #define	BIT_ERROR_OCCURED				BIT5
 
 //seatttle-test>>>
@@ -59,9 +59,9 @@
 #define ADC_BATTERY_PIN_NO								6				/* battery detection use analog input 4 as analog input */	
 #define ADC_SENSOR_PIN_NO									4			 	/* piezoelectric sensor use analog input 2 as analog input */
 
-#define CONNECTED_LED_PIN_NO							8U			/*not used*/
+#define CONNECTED_LED_PIN_NO						LED_0			/*not used*/
 #define ASSERT_LED_PIN_NO									8U			/*not used*/
-#define ADVERTISING_LED_PIN_NO						8U			/*not used*/
+#define ADVERTISING_LED_PIN_NO						LED_1			/*not used*/
 //seattle-test<<<
 
 /**@brief External reference to the Battery Service. */
